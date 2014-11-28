@@ -14,4 +14,10 @@ public class CreatingObservable {
     public Observable<String> from(List<String> values) {
         return Observable.from(values);
     }
+
+    public Observable<String> repeat(String val, long count) {
+        Observable<String> observable = just(val);
+        return observable.repeat(count);
+    }
+
 }

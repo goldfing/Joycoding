@@ -50,7 +50,7 @@ public class CreatingObservableTest {
 
             @Override
             public final void onCompleted() {
-                // do nothing
+                System.out.println("Subscribe completed.");
             }
 
             @Override
@@ -60,6 +60,28 @@ public class CreatingObservableTest {
         });
 
         subscription.unsubscribe();
+    }
+
+    @Test
+    public void testRepeat() throws Exception {
+        final String val = "repeat";
+        Subscription subscription = creatingObservable.repeat(val, 5L).subscribe(new Subscriber<String>() {
+            @Override
+            public void onCompleted() {
+                System.out.println("Subscribe completed.");
+            }
+
+            @Override
+            public void onError(Throwable e) {
+
+            }
+
+            @Override
+            public void onNext(String s) {
+                System.out.println(s);
+                assertThat(s).isEqualTo(val);
+            }
+        });
     }
 
 }
