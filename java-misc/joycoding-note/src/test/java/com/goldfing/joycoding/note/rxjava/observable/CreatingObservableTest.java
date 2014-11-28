@@ -13,20 +13,20 @@ import java.util.List;
 
 import static org.fest.assertions.Assertions.*;
 
-public class CreatingObservablesTest {
+public class CreatingObservableTest {
 
-    private CreatingObservables creatingObservables;
+    private CreatingObservable creatingObservable;
 
     @Before
     public void setup() {
-        creatingObservables = new CreatingObservables();
+        creatingObservable = new CreatingObservable();
 
     }
 
     @Test
     public void testJust() throws Exception {
         final String val = "something string";
-        Observable<String> observable = creatingObservables.just(val);
+        Observable<String> observable = creatingObservable.just(val);
         Subscription subscription = observable.subscribe(new Action1<String>() {
             @Override
             public void call(String s) {
@@ -40,7 +40,7 @@ public class CreatingObservablesTest {
     @Test
     public void testFrom() throws Exception {
         final List<String> strings = Lists.newArrayList("1", "2", "3", "4", "5");
-        Subscription subscription = creatingObservables.from(strings).subscribe(new Subscriber<String>() {
+        Subscription subscription = creatingObservable.from(strings).subscribe(new Subscriber<String>() {
 
             @Override
             public final void onNext(String args) {
