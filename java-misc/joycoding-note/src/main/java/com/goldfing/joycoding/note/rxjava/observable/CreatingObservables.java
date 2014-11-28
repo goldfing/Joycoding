@@ -2,6 +2,8 @@ package com.goldfing.joycoding.note.rxjava.observable;
 
 import rx.Observable;
 
+import java.util.List;
+
 
 public class CreatingObservables {
 
@@ -9,4 +11,7 @@ public class CreatingObservables {
         return Observable.just(str);
     }
 
+    public Observable<String> from(List<String> values) {
+        return Observable.from(values);
+    }
 }
