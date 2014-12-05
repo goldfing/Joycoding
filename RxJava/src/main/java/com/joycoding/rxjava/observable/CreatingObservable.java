@@ -1,7 +1,8 @@
 package com.joycoding.rxjava.observable;
 
 import lombok.extern.slf4j.Slf4j;
-import rx.Observable;
+import rx.*;
+import rx.functions.Func1;
 
 import java.util.List;
 
@@ -22,4 +23,19 @@ public class CreatingObservable {
         Observable<String> observable = Observable.just(val);
         return observable.repeat(count);
     }
+
+    public Observable<String> create(List<String> values) {
+        Observable<String> observable = Observable.create(new Observable.OnSubscribe<String>() {
+            @Override
+            public void call(Subscriber<? super String> subscriber) {
+                for (String val : values) {
+                    subscriber.onNext(val);
+                }
+                subscriber.onCompleted();
+            }
+        });
+
+        return observable;
+     }
+
 }

@@ -107,4 +107,28 @@ public class CreatingObservableTest {
 
         subscription.unsubscribe();
     }
+
+    @Test
+    public void testCreate() {
+        List<String> values = Lists.newArrayList("1", "2", "3");
+
+        Observable<String> observable = creatingObservable.create(values);
+
+        observable.subscribe(new Subscriber<String>() {
+            @Override
+            public void onCompleted() {
+                System.out.println("onCompleted");
+            }
+
+            @Override
+            public void onError(Throwable e) {
+
+            }
+
+            @Override
+            public void onNext(String val) {
+                System.out.println("onNext : val = " + val);
+            }
+        });
+    }
 }
