@@ -3,7 +3,6 @@ package com.joycoding.rxjava.observable;
 import com.google.common.collect.Lists;
 import lombok.extern.slf4j.Slf4j;
 import rx.*;
-import rx.functions.Func1;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
