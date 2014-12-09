@@ -23,4 +23,9 @@ public class TransformingObservable {
         Observable<Integer> observable = Observable.from(integers);
         return observable.concatMap(func1);
     }
+
+    public Observable<Integer> switchMap(List<Integer> values, Func1 func1) {
+        Observable<Integer> observable = Observable.from(values);
+        return observable.switchMap(func1);
+    }
 }

@@ -104,4 +104,28 @@ public class TransformingObservableTest {
             }
         });
     }
+
+    @Test
+    public void testSwitchMap() {
+        Func1<Integer, Observable<Integer>> func1 = (o) -> {
+            return Observable.from(Lists.newArrayList(o+1, o+2));
+        };
+
+        tfObservable.switchMap(values, func1).subscribe(new Subscriber<Integer>() {
+            @Override
+            public void onCompleted() {
+                System.out.println("onCompleted");
+            }
+
+            @Override
+            public void onError(Throwable e) {
+                //To change body of implemented methods use File | Settings | File Templates.
+            }
+
+            @Override
+            public void onNext(Integer integer) {
+                System.out.println("onNext : result="+integer);
+            }
+        });
+    }
 }
