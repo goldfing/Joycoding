@@ -7,6 +7,7 @@ import rx.Observable;
 import rx.Subscriber;
 import rx.functions.Func0;
 import rx.functions.Func1;
+import rx.functions.Func2;
 
 import java.util.List;
 
@@ -120,6 +121,30 @@ public class TransformingObservableTest {
             @Override
             public void onError(Throwable e) {
                 //To change body of implemented methods use File | Settings | File Templates.
+            }
+
+            @Override
+            public void onNext(Integer integer) {
+                System.out.println("onNext : result="+integer);
+            }
+        });
+    }
+
+    @Test
+    public void testScan() {
+        Func2<Integer, Integer, Integer> func2 = (a, b) -> {
+            return a + b;
+        };
+
+        tfObservable.scan(values, func2).subscribe(new Subscriber<Integer>() {
+            @Override
+            public void onCompleted() {
+                System.out.println("onCompleted");
+            }
+
+            @Override
+            public void onError(Throwable e) {
+
             }
 
             @Override
