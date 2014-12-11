@@ -5,10 +5,13 @@ import org.junit.Before;
 import org.junit.Test;
 import rx.Observable;
 import rx.Subscriber;
+import rx.functions.Action1;
 import rx.functions.Func0;
 import rx.functions.Func1;
 import rx.functions.Func2;
+import rx.observables.GroupedObservable;
 
+import java.io.Serializable;
 import java.util.List;
 
 
@@ -16,11 +19,13 @@ public class TransformingObservableTest {
 
     private TransformingObservable tfObservable;
     List<Integer> values;
+    List<String> strings;
 
     @Before
     public void setup() {
         tfObservable = new TransformingObservable();
         values = Lists.newArrayList(1, 2, 3, 4, 5);
+        strings = Lists.newArrayList("a", "b", "c", "d", "e");
     }
 
     @Test
@@ -132,11 +137,11 @@ public class TransformingObservableTest {
 
     @Test
     public void testScan() {
-        Func2<Integer, Integer, Integer> func2 = (a, b) -> {
-            return a + b;
+        Func2<String, String, String> func2 = (a, b) -> {
+            return a +"/"+ b;
         };
 
-        tfObservable.scan(values, func2).subscribe(new Subscriber<Integer>() {
+        tfObservable.scan(strings, func2).subscribe(new Subscriber<String>() {
             @Override
             public void onCompleted() {
                 System.out.println("onCompleted");
@@ -148,8 +153,8 @@ public class TransformingObservableTest {
             }
 
             @Override
-            public void onNext(Integer integer) {
-                System.out.println("onNext : result="+integer);
+            public void onNext(String val) {
+                System.out.println("onNext : result="+val);
             }
         });
     }

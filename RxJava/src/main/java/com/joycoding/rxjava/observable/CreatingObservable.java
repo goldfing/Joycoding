@@ -31,6 +31,16 @@ public class CreatingObservable {
         });
     }
 
+    public Observable<String> create(List<String> values, int take) {
+        return Observable.create((Observable.OnSubscribe<String>) (subscriber) -> {
+            for (String val : values) {
+                System.out.println("alloc onNext");
+                subscriber.onNext(val);
+            }
+            subscriber.onCompleted();
+        }).take(take);
+    }
+
     public Observable<String> defer() {
         Observable<String> observable1 = Observable.defer(() -> {
             Observable<String> stringObservable = Observable.from(Lists.newArrayList("a", "b", "c"));

@@ -5,6 +5,7 @@ import rx.Observable;
 import rx.functions.Func0;
 import rx.functions.Func1;
 import rx.functions.Func2;
+import rx.observables.GroupedObservable;
 
 import java.util.List;
 
@@ -30,8 +31,8 @@ public class TransformingObservable {
         return observable.switchMap(func1);
     }
 
-    public Observable<Integer> scan(List<Integer> values, Func2 func2) {
-        Observable<Integer> observable = Observable.from(values);
+    public Observable<String> scan(List<String> values, Func2 func2) {
+        Observable<String> observable = Observable.from(values);
         return observable.scan(func2);
     }
 }
