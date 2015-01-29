@@ -1,0 +1,6 @@
+E:\GithubProjects\Joycoding\CSharp\brainCSharp5.0\chapter06\SwapByRef\SwapByRef\bin\Debug\SwapByRef.exe.config
+E:\GithubProjects\Joycoding\CSharp\brainCSharp5.0\chapter06\SwapByRef\SwapByRef\bin\Debug\SwapByRef.exe
+E:\GithubProjects\Joycoding\CSharp\brainCSharp5.0\chapter06\SwapByRef\SwapByRef\bin\Debug\SwapByRef.pdb
+E:\GithubProjects\Joycoding\CSharp\brainCSharp5.0\chapter06\SwapByRef\SwapByRef\obj\Debug\SwapByRef.csprojResolveAssemblyReference.cache
+E:\GithubProjects\Joycoding\CSharp\brainCSharp5.0\chapter06\SwapByRef\SwapByRef\obj\Debug\SwapByRef.exe
+E:\GithubProjects\Joycoding\CSharp\brainCSharp5.0\chapter06\SwapByRef\SwapByRef\obj\Debug\SwapByRef.pdb
