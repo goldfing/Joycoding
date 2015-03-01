@@ -1,0 +1,9 @@
+E:\GithubProjects\Joycoding\C#\brainC#5.0\chapter02\HelloWorld\HelloWorld\bin\Debug\HelloWorld.exe.config
+E:\GithubProjects\Joycoding\C#\brainC#5.0\chapter02\HelloWorld\HelloWorld\bin\Debug\HelloWorld.exe
+E:\GithubProjects\Joycoding\C#\brainC#5.0\chapter02\HelloWorld\HelloWorld\bin\Debug\HelloWorld.pdb
+E:\GithubProjects\Joycoding\C#\brainC#5.0\chapter02\HelloWorld\HelloWorld\obj\Debug\HelloWorld.csprojResolveAssemblyReference.cache
+E:\GithubProjects\Joycoding\C#\brainC#5.0\chapter02\HelloWorld\HelloWorld\obj\Debug\HelloWorld.exe
+E:\GithubProjects\Joycoding\C#\brainC#5.0\chapter02\HelloWorld\HelloWorld\obj\Debug\HelloWorld.pdb
+E:\GithubProjects\Joycoding\CSharp\brainCSharp5.0\chapter02\HelloWorld\HelloWorld\bin\Debug\HelloWorld.exe.config
+E:\GithubProjects\Joycoding\CSharp\brainCSharp5.0\chapter02\HelloWorld\HelloWorld\obj\Debug\HelloWorld.exe
+E:\GithubProjects\Joycoding\CSharp\brainCSharp5.0\chapter02\HelloWorld\HelloWorld\obj\Debug\HelloWorld.pdb

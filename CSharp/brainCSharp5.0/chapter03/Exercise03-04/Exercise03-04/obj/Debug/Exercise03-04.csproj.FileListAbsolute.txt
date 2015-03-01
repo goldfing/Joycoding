@@ -1,0 +1,6 @@
+E:\GithubProjects\Joycoding\CSharp\brainCSharp5.0\chapter03\Exercise03-04\Exercise03-04\bin\Debug\Exercise03-04.exe.config
+E:\GithubProjects\Joycoding\CSharp\brainCSharp5.0\chapter03\Exercise03-04\Exercise03-04\bin\Debug\Exercise03-04.exe
+E:\GithubProjects\Joycoding\CSharp\brainCSharp5.0\chapter03\Exercise03-04\Exercise03-04\bin\Debug\Exercise03-04.pdb
+E:\GithubProjects\Joycoding\CSharp\brainCSharp5.0\chapter03\Exercise03-04\Exercise03-04\obj\Debug\Exercise03-04.csprojResolveAssemblyReference.cache
+E:\GithubProjects\Joycoding\CSharp\brainCSharp5.0\chapter03\Exercise03-04\Exercise03-04\obj\Debug\Exercise03-04.exe
+E:\GithubProjects\Joycoding\CSharp\brainCSharp5.0\chapter03\Exercise03-04\Exercise03-04\obj\Debug\Exercise03-04.pdb

@@ -1,0 +1,9 @@
+E:\GithubProjects\Joycoding\C#\brainC#5.0\chapter02\Exercise02-01\Exercise02-01\bin\Debug\Exercise02-01.exe.config
+E:\GithubProjects\Joycoding\C#\brainC#5.0\chapter02\Exercise02-01\Exercise02-01\bin\Debug\Exercise02-01.exe
+E:\GithubProjects\Joycoding\C#\brainC#5.0\chapter02\Exercise02-01\Exercise02-01\bin\Debug\Exercise02-01.pdb
+E:\GithubProjects\Joycoding\C#\brainC#5.0\chapter02\Exercise02-01\Exercise02-01\obj\Debug\Exercise02-01.csprojResolveAssemblyReference.cache
+E:\GithubProjects\Joycoding\C#\brainC#5.0\chapter02\Exercise02-01\Exercise02-01\obj\Debug\Exercise02-01.exe
+E:\GithubProjects\Joycoding\C#\brainC#5.0\chapter02\Exercise02-01\Exercise02-01\obj\Debug\Exercise02-01.pdb
+E:\GithubProjects\Joycoding\CSharp\brainCSharp5.0\chapter02\Exercise02-01\Exercise02-01\bin\Debug\Exercise02-01.exe.config
+E:\GithubProjects\Joycoding\CSharp\brainCSharp5.0\chapter02\Exercise02-01\Exercise02-01\obj\Debug\Exercise02-01.exe
+E:\GithubProjects\Joycoding\CSharp\brainCSharp5.0\chapter02\Exercise02-01\Exercise02-01\obj\Debug\Exercise02-01.pdb
