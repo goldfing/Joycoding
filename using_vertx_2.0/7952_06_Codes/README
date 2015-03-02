@@ -1,0 +1,26 @@
+This is the complete source code for Chapter 6 of Real-Time Web Application Development with Vert.x.
+
+
+
+To run the application, type:
+
+    vertx run app.js
+
+
+
+Then point your web browser to http://localhost:8080
+
+The files included:
+* app.js - The deployment verticle
+* mindmaps.js - Mind map management verticle
+* mindmap_editor.js - Mind map editor verticle
+* web/index.html - The application's HTML host page
+* web/client.js - The client-side code of the application
+* web/editor.js - The client-side code for the mind map editor
+* web/mindmap_utils.js - Mindmap utility functions, shared between client and server
+* web/style.css - Application stylesheet
+* mods/com.vertxbook~mod-svg2png~1.0/mod.json - svg2png module descriptor
+* mods/com.vertxbook~mod-svg2png~1.0/PNGExporter.java - svg2png module's main (and only) verticle
+* mods/com.vertxbook~mod-svg2png~1.0/lib/*.jar - Java libraries (mainly Apache Batik) used by svg2png
+* Vagrantfile - Vagrant configuration for the Ubuntu virtual machine used for deployment
+* deploy.sh - A shell script for deploying the application
