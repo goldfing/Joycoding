@@ -5,8 +5,10 @@ import rx.Observable;
 import rx.functions.Func0;
 import rx.functions.Func1;
 import rx.functions.Func2;
+import rx.observables.GroupedObservable;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class TransformingObservable {
 
@@ -30,8 +32,28 @@ public class TransformingObservable {
         return observable.switchMap(func1);
     }
 
-    public Observable<Integer> scan(List<Integer> values, Func2 func2) {
-        Observable<Integer> observable = Observable.from(values);
+    public Observable<String> scan(List<String> values, Func2 func2) {
+        Observable<String> observable = Observable.from(values);
         return observable.scan(func2);
+    }
+
+    public Observable<List<String>> buffer(List<String> values) {
+        Observable<String> observable = Observable.from(values);
+        return observable.buffer(3);
+    }
+
+    public Observable<List<String>> buffer(List<String> values, int count, int skip) {
+        Observable<String> observable = Observable.from(values);
+        return observable.buffer(count, skip);
+    }
+
+    public Observable<List<List<String>>> bufferWithTimeSpan(List<String> values) {
+        Observable<String> observable = Observable.from(values);
+        return observable.buffer(2).buffer(10L, TimeUnit.SECONDS);
+    }
+
+    public Observable<Integer> cast(List<String> values) {
+        Observable<String> observable = Observable.from(values);
+        return observable.cast(Integer.class);
     }
 }

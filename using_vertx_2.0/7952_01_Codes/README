@@ -1,0 +1,15 @@
+This is the complete source code for Chapter 1 of Real-Time Web Application Development with Vert.x.
+
+
+
+To run the application, type:
+
+    vertx run app.js
+
+Then point your web browser to http://localhost:8080
+
+
+
+The files included:
+* app.js - The deployment verticle
+* web/index.html - The application's HTML host page

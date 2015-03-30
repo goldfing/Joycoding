@@ -19,9 +19,12 @@ import static org.fest.assertions.Assertions.*;
 public class CreatingObservableTest {
 
     private CreatingObservable creatingObservable;
+    private List<String> strings;
+
     @Before
     public void setUp() throws Exception {
         creatingObservable = new CreatingObservable();
+        strings = Lists.newArrayList("a", "b", "c", "d", "e");
     }
 
     @After
@@ -111,9 +114,30 @@ public class CreatingObservableTest {
 
     @Test
     public void testCreate() {
-        List<String> values = Lists.newArrayList("1", "2", "3");
+        Observable<String> observable = creatingObservable.create(strings);
 
-        Observable<String> observable = creatingObservable.create(values);
+        Subscription subscription = observable.subscribe(new Subscriber<String>() {
+            @Override
+            public void onCompleted() {
+                System.out.println("onCompleted");
+            }
+
+            @Override
+            public void onError(Throwable e) {
+
+            }
+
+            @Override
+            public void onNext(String val) {
+                System.out.println("onNext : val = " + val);
+            }
+        });
+        subscription.unsubscribe();
+    }
+
+    @Test
+    public void testCreate_take() {
+        Observable<String> observable = creatingObservable.create(strings, 3);
 
         Subscription subscription = observable.subscribe(new Subscriber<String>() {
             @Override
