@@ -3,7 +3,7 @@
 
 ## 정렬의 종류
 - [Selection Sort](./src/com/goldfing/sort/selection)
-- Insertion Sort
+- [Insertion Sort](./src/com/goldfing/sort/insertion)
 - Bubble Sort
 - Shell Sort
 - Merge Sort
