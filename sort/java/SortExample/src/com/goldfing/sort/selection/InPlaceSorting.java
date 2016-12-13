@@ -1,5 +1,7 @@
 package com.goldfing.sort.selection;
 
+import com.goldfing.sort.utils.ArrayUtils;
+
 // In-place Sorting
 public class InPlaceSorting {
 
@@ -20,12 +22,8 @@ public class InPlaceSorting {
             }
         }
 
-        printArray(src);
+        ArrayUtils.printArray(src);
     }
 
-    public static void printArray(int[] arr) {
-        for (int i : arr) {
-            System.out.println(i);
-        }
-    }
+
 }
