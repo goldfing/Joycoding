@@ -1,4 +1,4 @@
 Joycoding
 =========
 
-# [Sort](./sort/java/SortExample)
+* [Sort](./sort/java/SortExample)
