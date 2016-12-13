@@ -1,4 +1,4 @@
-# 삽입 정렬 : Insertion Sorting
+# Insertion Sort
 
 카드를 정렬하듯이 하나씩 이동하면서 알맞은 자리에 삽입하는 정렬방식이다. 
 

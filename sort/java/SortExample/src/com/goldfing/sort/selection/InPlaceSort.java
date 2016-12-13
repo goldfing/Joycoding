@@ -3,7 +3,7 @@ package com.goldfing.sort.selection;
 import com.goldfing.sort.utils.ArrayUtils;
 
 // In-place Sorting
-public class InPlaceSorting {
+public class InPlaceSort {
 
     public static void main(String[] args) {
 	    int[] src = {1, 5, 6, 9, 2, 4, 3};

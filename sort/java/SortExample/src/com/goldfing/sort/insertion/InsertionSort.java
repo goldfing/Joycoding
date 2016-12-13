@@ -2,7 +2,7 @@ package com.goldfing.sort.insertion;
 
 import com.goldfing.sort.utils.ArrayUtils;
 
-public class InsertionSorting {
+public class InsertionSort {
     public static void main(String[] args) {
         int[] list = {1, 7, 4, 3, 8, 23};
         int j, key;

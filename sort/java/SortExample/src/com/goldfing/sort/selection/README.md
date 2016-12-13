@@ -1,4 +1,4 @@
-# 제자리 정렬 : In-Place Sorting
+# In-Place Sort
 
 두개의 리스트를 사용하지 않고 하나의 리스트에서 원소를 swap하면서 정렬하는 방법
 
